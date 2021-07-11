@@ -1,0 +1,30 @@
+.navbutton {
+    background-color: coral;
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/* this turns the dropdown menue off when not used */
+.dropdown-box {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -25px;
+}
+
+/* This turns it on when used, hover */
+.navbutton:hover .dropdown-box {
+    display: block;
+}
+.dropdown-box .navbutton {
+    background-color: darkgrey;
+}
+
+.dropdown-box .navbutton:hover {
+    background-color: rgb(149, 150, 220);
+    transition-duration: 1s;
+}

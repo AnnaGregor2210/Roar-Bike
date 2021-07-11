@@ -1,0 +1,220 @@
+html {
+	/* I have excluded the height so the gradient of the page will be in one piece without a border */
+	/* height:100% */
+	background-image:linear-gradient(#FF5ACD,#fd7739);
+}
+
+body {
+	background-image: url(images/Drop\ shadow\ lion\ background.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	color:white;
+	font-family:'Roboto', sans-serif;
+	font-size: 1.125rem;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+.container {
+	width: 1020px;
+	min-height:300px;
+	margin-left:auto;
+	margin-right: auto;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgb(197, 186, 186);
+}
+
+main {
+	min-height: 300px;
+	display: flex;
+	align-items:center;
+}
+
+.main2 {
+	min-height: 300px;
+	padding-top: 50px;
+
+}
+
+.cards {
+	display: flex;
+	justify-content:space-between;
+	text-align: center;
+}
+
+.card1 {
+	background-image: url(images/image-background-card1.jpg);
+	background-size: cover;
+	background-position: bottom;
+	min-height: 250px;
+	width:30%;
+}
+	
+.card2{
+	background-image: url(images/image-background-card2.jpg);
+	background-size: cover;
+	background-position: bottom;
+	min-height: 250px;
+	width:30%;
+
+}
+
+.card3 {
+	background-image:url(images/image-background-card3.jpg);
+	background-size: cover;
+	background-position: bottom;
+	min-height: 250px;
+	width:30%;
+}
+
+.card1, .card2, .card3 {
+	padding: 30px 30px 20px 30px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0,0.35);
+}
+
+.herobox1 {
+	/* This flex can work only when the parent element has flex in it */
+	flex: 2; 
+	padding-right: 100px;
+
+}
+
+.herobox2 {
+/* This flex can work only when the parent element has flex in it */
+    flex: 1;
+
+}
+
+nav {
+	text-align: right;
+}
+
+h1 {
+	font-size:3.25rem;
+	font-family:'Roboto', sans-serif;
+	margin-bottom: 1rem;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0,0.35);
+}
+
+h2 {
+	font-size:2rem;
+	font-family:'Roboto', sans-serif;
+	margin-top: 20px;
+
+}
+
+p {
+	 line-height: 1.75rem;
+	 margin-bottom: 0.5rem;
+
+}
+.cards p {
+	font-size: 0.85rem;
+	line-height: 1.2rem;
+	margin-top: 10px;
+}
+
+.cards i {
+	font-size: 100px;
+}
+
+.cards a  {
+	color: white;
+	text-decoration: none;
+}
+
+.mybutton:hover{
+	background-color: yellowgreen;
+	transition: 3s;
+}
+.mybutton {
+
+	background-color: whitesmoke;
+	padding:11px 25px;
+	color:#FF5ACD;
+	font-weight: bold;
+	font-family:'Roboto', sans-serif;
+	display: inline-block;
+	margin-top: 20px;
+	border-radius: 12px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0,0.35);
+}
+.herobox2 img {
+	border-radius: 15px;
+}
+
+/* nav a.mybutton {
+	margin-left: 30px;
+} */
+
+.navbutton {
+	padding: 11px 25px;
+	border:1px solid white;
+	font-family:'Roboto', sans-serif;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+.testimonials {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.tbox {
+	width: 47%;
+	padding:50px;
+	border: 1px solid white;
+    box-sizing: border-box;
+	margin-top: 50px;
+}
+
+/* .tbox :last-child{
+	font-size: 0.8rem;
+} */
+
+ /* both last-child and last-of-type are good. Choose one of them. */
+
+.tbox p:last-of-type {
+	font-size: 0.9rem;
+	padding-left: 30px;
+}
+
+.dropdown-box {
+
+	display: none;
+	position: absolute;
+	z-index: 99;
+	padding-top: 20px;
+	margin-left: -25px;
+	
+}
+
+.navbutton:hover .dropdown-box {
+	display: block;
+
+}
+
+.dropdown-box .navbutton {
+	width: 120px;
+	background-color: rgb(255, 255, 255);
+}
+
+.dropdown-box .navbutton a {
+	color: rgb(247, 24, 184);
+}
+ 
+.dropdown-box .navbutton:hover{
+	background-color: rgba(60, 179, 113, 0.8);
+	transition: 3s;
+}
